@@ -1,0 +1,30 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    environment:
+      REDIS_HOST: cache
+      REDIS_PORT: 6379
+      PORT: 3001
+    depends_on:
+      - cache
+
+  cache:
+    image: redis:7-alpine
+    volumes:
+      - redis_data:/data
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  redis_data:
