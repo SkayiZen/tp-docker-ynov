@@ -1,4 +1,4 @@
-# TP1 — Image Docker Node.js
+# TP1 - Image Docker Node.js
 
 Application Node.js simple permettant d'envoyer et d'afficher des messages.
 
