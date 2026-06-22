@@ -1,4 +1,4 @@
-# TP2 — Docker Compose : stack multi-services
+# TP2 - Docker Compose : stack multi-services
 
 Stack composée d'un frontend Nginx, d'une API Node.js, d'une base PostgreSQL et d'Adminer.
 
