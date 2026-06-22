@@ -1,4 +1,4 @@
-# TP3 — TaskFlow
+# TP3 - TaskFlow
 
 Application de gestion de tâches composée d'un frontend Nginx, d'une API Node.js et d'un cache Redis.
 
